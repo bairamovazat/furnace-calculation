@@ -1,8 +1,8 @@
 package ru.itis.furnace.calculation.formula;
 
-import ru.itis.furnace.calculation.MagicConstant;
-import ru.itis.furnace.calculation.AirComposition;
 import ru.itis.furnace.calculation.AirComponent;
+import ru.itis.furnace.calculation.AirComposition;
+import ru.itis.furnace.calculation.MagicConstant;
 
 import java.util.Arrays;
 

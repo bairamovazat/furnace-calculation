@@ -11,9 +11,9 @@ public enum AirComponent {
     N2(29.1, 4.8, -0.81),
     SO2(41.2, 11.9, -2.2);
 
-    private Double a;
-    private Double b;
-    private Double c;
+    private final Double a;
+    private final Double b;
+    private final Double c;
 
     AirComponent(Double a, Double b, Double c) {
         this.a = a;

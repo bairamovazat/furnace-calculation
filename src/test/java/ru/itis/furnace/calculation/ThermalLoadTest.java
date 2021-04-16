@@ -14,7 +14,7 @@ public class ThermalLoadTest {
         Double q_tk = 907.0;
         Double q_th = 359.0;
         Double result = ThermalLoad.usefulThermalLoad(G_c, e, Q_tk, q_tk, q_th);
-        Assertions.assertEquals(result, 28380.448, 0.001 );
+        Assertions.assertEquals(result, 28380.448, 0.001);
     }
 
     @Test
@@ -22,7 +22,7 @@ public class ThermalLoadTest {
         Double temp = 375.0;
         Double density = 0.921;
         Double result = ThermalLoad.productHeatContent(temp, density);
-        Assertions.assertEquals(result, 906.9404, 0.001 );
+        Assertions.assertEquals(result, 906.9404, 0.001);
     }
 
     @Test
@@ -30,7 +30,7 @@ public class ThermalLoadTest {
         Double temp = 375.0;
         Double density = 0.834;
         Double result = ThermalLoad.productSteamHeatContent(temp, density);
-        Assertions.assertEquals(result, 1164.4665, 0.001 );
+        Assertions.assertEquals(result, 1164.4665, 0.001);
     }
 
 }

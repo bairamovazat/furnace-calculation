@@ -15,7 +15,7 @@ public class FurnaceEfficiencyTest {
     private final Double wetContent = 0.0;
 
 
-    public AirComposition  getAirComposition() {
+    public AirComposition getAirComposition() {
         AirComposition airComposition = new AirComposition();
 
         airComposition.setAirComponentContent(AirComponent.O2, 0.012508813);

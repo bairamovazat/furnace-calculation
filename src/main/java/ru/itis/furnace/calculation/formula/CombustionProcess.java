@@ -1,8 +1,8 @@
 package ru.itis.furnace.calculation.formula;
 
+import ru.itis.furnace.calculation.MagicConstant;
 import ru.itis.furnace.calculation.calculator.Calculator;
 import ru.itis.furnace.calculation.calculator.Variable;
-import ru.itis.furnace.calculation.MagicConstant;
 
 /**
  * Расчёт процессов горения
