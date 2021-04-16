@@ -19,9 +19,9 @@ public final class ThermalLoad {
      *
      * @param productConsumption           - G_c – расход продукта
      * @param outputMassFractionDistillate - е – массовая доля отгона на выходе из печи
-     * @param Q_tk                         -  Q_tk - удельные теплосодержания продукта на выходе из печи
+     * @param Q_tk                         - Q_tk - удельные теплосодержания продукта на выходе из печи
      * @param q_tk                         - q_tk -  удельные теплосодержания неиспарившейся жидкости
-     * @param q_th                         -  q_th - удельные теплосодержания продукта на входе в печ
+     * @param q_th                         - q_th - удельные теплосодержания продукта на входе в печ
      * @return полезная тепловая нагрузка
      */
     public static Double usefulThermalLoad(Double productConsumption, Double outputMassFractionDistillate,
