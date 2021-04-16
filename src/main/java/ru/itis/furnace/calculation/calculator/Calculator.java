@@ -6,6 +6,9 @@ import lombok.Builder;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Позволяет расчитывать формулы
+ */
 @Builder
 public class Calculator {
 
@@ -13,15 +16,27 @@ public class Calculator {
 
     private final List<Variable> variableList;
 
+    /**
+     * @param function формула, которую нужно расчитать
+     * @param variables значение переменных
+     * @return Calculator, который будет считать эту формулу
+     */
     public static Calculator build(String function, Variable... variables) {
         return new Calculator(function, Arrays.asList(variables));
     }
 
+    /**
+     * @param function  формула, которую нужно расчитать
+     * @param variables значение переменных
+     */
     private Calculator(String function, List<Variable> variables) {
         this.function = function;
         this.variableList = variables;
     }
 
+    /**
+     * @return результат формулы
+     */
     public Double getValue() {
         assert function != null;
         assert variableList != null;

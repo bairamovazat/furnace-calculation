@@ -24,8 +24,13 @@
                         <include>CombustionProcess.java</include>
                         <include>FurnaceEfficiency.java</include>
                         <include>ThermalLoad.java</include>
+                        <include>Calculator.java</include>
+                        <include>Variable.java</include>
                     </sourceFileIncludes>
-                    <sourcepath>${basedir}/src/main/java/ru/itis/furnace/calculation/formula</sourcepath>
+                    <sourcepath>
+                        ${basedir}/src/main/java/ru/itis/furnace/calculation/formula;
+                        ${basedir}/src/main/java/ru/itis/furnace/calculation/calculator;
+                    </sourcepath>
                 </configuration>
             </plugin>
         </plugins>

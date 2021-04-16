@@ -14,11 +14,11 @@ public final class CombustionProcess {
     }
 
     /**
-     * @param carbonContent   - процент содержания углерода в нефти
-     * @param hydrogenContent - процент содержания водорода в нефти
-     * @param sulfurContent   - процент содержания серы в нефти
-     * @param oxygenContent   - процент содержания кислорода в нефти
-     * @param wetContent      - процент содержания влаги в нефти
+     * @param carbonContent   процент содержания углерода в нефти
+     * @param hydrogenContent процент содержания водорода в нефти
+     * @param sulfurContent   процент содержания серы в нефти
+     * @param oxygenContent   процент содержания кислорода в нефти
+     * @param wetContent      процент содержания влаги в нефти
      * @return Низшая теплотворная способность топлива
      */
     public static Double productNetCalorificValue(Double carbonContent, Double hydrogenContent, Double sulfurContent,
@@ -33,10 +33,10 @@ public final class CombustionProcess {
     }
 
     /**
-     * @param carbonContent   - процент содержания углерода в нефти
-     * @param hydrogenContent - процент содержания водорода в нефти
-     * @param sulfurContent   - процент содержания серы в нефти
-     * @param oxygenContent   - процент содержания кислорода в нефти
+     * @param carbonContent   процент содержания углерода в нефти
+     * @param hydrogenContent процент содержания водорода в нефти
+     * @param sulfurContent   процент содержания серы в нефти
+     * @param oxygenContent   процент содержания кислорода в нефти
      * @return Количество воздуха для сжигания киллограмма топлива
      */
     public static Double airAmountToFuel(Double carbonContent, Double hydrogenContent, Double sulfurContent,
@@ -50,7 +50,7 @@ public final class CombustionProcess {
     }
 
     /**
-     * @param airAmount - количество воздуха (кг)
+     * @param airAmount количество воздуха (кг)
      * @return Объём воздуха (m^3)
      */
     public static Double airVolumeFromAirAmount(Double airAmount) {
@@ -58,7 +58,7 @@ public final class CombustionProcess {
     }
 
     /**
-     * @param carbonContent - процент содержания углерода в нефти
+     * @param carbonContent процент содержания углерода в нефти
      * @return Количество CO2 выделяемого во время горения одного килограмма топлива (кмоль/кг)
      */
     public static Double burningProductsAmountCO2(Double carbonContent) {
@@ -68,7 +68,7 @@ public final class CombustionProcess {
     }
 
     /**
-     * @param sulfurContent - процент содержания серы в нефти
+     * @param sulfurContent процент содержания серы в нефти
      * @return Количество SO2 выделяемого во время горения одного килограмма топлива (кмоль/кг)
      */
     public static Double burningProductsAmountSO2(Double sulfurContent) {
@@ -78,9 +78,9 @@ public final class CombustionProcess {
     }
 
     /**
-     * @param hydrogenContent - процент содержания водорода в нефти
-     * @param waterSteam      - количество форсуночного водяного пара при паровом распыливании жидкого топлива, кг/кг
-     * @param wetContent      - процент содержания влаги в нефти
+     * @param hydrogenContent процент содержания водорода в нефти
+     * @param waterSteam      количество форсуночного водяного пара при паровом распыливании жидкого топлива, кг/кг
+     * @param wetContent      процент содержания влаги в нефти
      * @return Количество H2O выделяемого во время горения одного килограмма топлива (кмоль/кг)
      */
     public static Double burningProductsAmountH2O(Double hydrogenContent, Double waterSteam, Double wetContent) {
@@ -92,8 +92,8 @@ public final class CombustionProcess {
     }
 
     /**
-     * @param airVolume - теоретический объём воздуха
-     * @param airSurplusCoefficient - коэффициент избытка воздуха
+     * @param airVolume             теоретический объём воздуха
+     * @param airSurplusCoefficient коэффициент избытка воздуха
      * @return Количество N2 выделяемого во время горения одного килограмма топлива (кмоль/кг)
      */
     public static Double burningProductsAmountN2(Double airVolume, Double airSurplusCoefficient) {
@@ -104,8 +104,8 @@ public final class CombustionProcess {
     }
 
     /**
-     * @param airVolume - теоретический объём воздуха
-     * @param airSurplusCoefficient - коэффициент избытка воздуха
+     * @param airVolume             теоретический объём воздуха
+     * @param airSurplusCoefficient коэффициент избытка воздуха
      * @return Количество O2 выделяемого во время горения одного килограмма топлива (кмоль/кг)
      */
     public static Double burningProductsAmountO2(Double airVolume, Double airSurplusCoefficient) {

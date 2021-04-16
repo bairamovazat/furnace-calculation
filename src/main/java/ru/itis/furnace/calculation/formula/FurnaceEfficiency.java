@@ -8,14 +8,14 @@ import java.util.Arrays;
 
 
 /**
- * Рассчёт кпд печи
+ * Расчёт кпд печи
  */
 public final class FurnaceEfficiency {
 
     /**
-     * @param airComposition        - состав воздуха
-     * @param exitingGasTemperature - Температура отходящих дымовых газов
-     * @param outsideTemperature    - Температура окружающего воздуха
+     * @param airComposition        состав воздуха
+     * @param exitingGasTemperature температура отходящих дымовых газов
+     * @param outsideTemperature    температура окружающего воздуха
      * @return потери тепла с отходящими газами
      */
     public static Double exitingHeatLoss(AirComposition airComposition, Double exitingGasTemperature,
@@ -31,10 +31,10 @@ public final class FurnaceEfficiency {
     }
 
     /**
-     * @param productNetCalorificValue - Низшая теплотворная способность топлива
-     * @param airComposition           - Состав воздуха
-     * @param exitingGasTemperature    - Температура отходящих дымовых газов
-     * @param outsideTemperature       - Температура окружающего воздуха
+     * @param productNetCalorificValue низшая теплотворная способность топлива
+     * @param airComposition           состав воздуха
+     * @param exitingGasTemperature    температура отходящих дымовых газов
+     * @param outsideTemperature       температура окружающего воздуха
      * @return КПД печи
      */
     public static Double furnaceEfficiency(AirComposition airComposition, Double productNetCalorificValue,

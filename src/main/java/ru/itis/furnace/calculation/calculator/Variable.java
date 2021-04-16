@@ -6,6 +6,9 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+/**
+ * Переменная для формулы
+ */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -19,6 +22,11 @@ public class Variable {
         variableSet.set(key, value);
     }
 
+    /**
+     * @param key название переменной
+     * @param value значение переменной
+     * @return переменная для Calculator
+     */
     public static Variable build(String key, Double value) {
         return Variable.builder().key(key).value(value).build();
     }

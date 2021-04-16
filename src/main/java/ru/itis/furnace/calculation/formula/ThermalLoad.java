@@ -17,11 +17,11 @@ public final class ThermalLoad {
     /**
      * Расчет полезной тепловой нагрузки, кДж/кг
      *
-     * @param productConsumption           - G_c – расход продукта
-     * @param outputMassFractionDistillate - е – массовая доля отгона на выходе из печи
-     * @param Q_tk                         - Q_tk - удельные теплосодержания продукта на выходе из печи
-     * @param q_tk                         - q_tk -  удельные теплосодержания неиспарившейся жидкости
-     * @param q_th                         - q_th - удельные теплосодержания продукта на входе в печ
+     * @param productConsumption           G_c – расход продукта
+     * @param outputMassFractionDistillate е – массовая доля отгона на выходе из печи
+     * @param Q_tk                         Q_tk - удельные теплосодержания продукта на выходе из печи
+     * @param q_tk                         q_tk -  удельные теплосодержания неиспарившейся жидкости
+     * @param q_th                         q_th - удельные теплосодержания продукта на входе в печ
      * @return полезная тепловая нагрузка
      */
     public static Double usefulThermalLoad(Double productConsumption, Double outputMassFractionDistillate,
@@ -41,8 +41,8 @@ public final class ThermalLoad {
     }
 
     /**
-     * @param temp    - начальная температура нефти
-     * @param density - плотность сырья
+     * @param temp    начальная температура нефти
+     * @param density плотность сырья
      * @return удельное теплосодержание для нефти
      */
     public static Double productHeatContent(Double temp, Double density) {
@@ -53,8 +53,8 @@ public final class ThermalLoad {
     }
 
     /**
-     * @param temp    - начальная температура нефти
-     * @param density - плотность сырья
+     * @param temp    начальная температура нефти
+     * @param density плотность сырья
      * @return удельное теплосодержание для паров нефти
      */
     public static Double productSteamHeatContent(Double temp, Double density) {
